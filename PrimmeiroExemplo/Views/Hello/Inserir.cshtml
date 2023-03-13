@@ -6,6 +6,7 @@
 
 @using (Html.BeginForm())
 {
+    @*
     @Html.LabelFor(d=>d.Nome)
     @Html.TextBoxFor(d=>d.Nome)<br />
 
@@ -14,8 +15,9 @@
     <br />
     @Html.LabelFor(d=>d.Cidade)
     @Html.TextBoxFor(d=>d.Cidade)
-    <br />
+    <br />*@
 
+    @Html.EditorForModel()
     <input type="submit" value="Inserir"/>
 
 }

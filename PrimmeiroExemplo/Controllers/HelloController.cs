@@ -29,10 +29,10 @@ namespace PrimmeiroExemplo.Controllers
         {
             return View();
         }
-
+        [HttpPost]
         public ActionResult Inserir(Aluno aluno)
         {// Action pra receber o post
-            return View(Resu);
+            return View("Resultado",aluno);
         }
 
     }

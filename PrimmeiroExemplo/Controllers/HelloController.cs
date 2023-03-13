@@ -13,7 +13,10 @@ namespace PrimmeiroExemplo.Controllers
                 Idade = 25,
                 Cidade = "sÃO pAULO",
                 HorarioEntrada = DateTime.UtcNow.Hour,
-                HorarioEntradaSaudacoes=""
+                HorarioEntradaSaudacoes = "",
+                Bebida = true,
+                Drink = true
+          
 
             };
 
@@ -32,12 +35,19 @@ namespace PrimmeiroExemplo.Controllers
         [HttpPost]
         public ActionResult Inserir(Aluno aluno)
         {// Action pra receber o post
-            return View("Resultado",aluno);
+
+            if (aluno.Bebida == true)
+            {
+                return View("Resultado", aluno);
+            }
+
+            return View(aluno);
+        }
         }
 
     }
 
 
-        }
+        
     
 

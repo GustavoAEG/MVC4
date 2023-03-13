@@ -7,5 +7,9 @@
         public string Cidade { get; set; }
         public int HorarioEntrada { get; set; }
         public string HorarioEntradaSaudacoes { get; set; }
+
+        public bool Bebida { get; set; }
+
+        public bool Drink { get; set; }
     }
 }
